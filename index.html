@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <h6>Hello World, we are software developers!</h6>
+    </header>
+
+    <main>
+      <section class="survey-section">
+        <form class="survey-form">
+          <p class="survey-text">
+            This is a landing page, for a very big project, in an international
+            company.
+          </p>
+
+          <div class="input-group">
+            <label for="name" class="d-block main-label">Name:</label>
+            <input class="form-control w-100" type="text" id="name" placeholder="Enter name" required />
+          </div>
+
+
+          <div class="input-group">
+            <label for="email" class="d-block main-label">Email:</label>
+            <input class="form-control w-100" type="email" id="email" placeholder="Enter email" required />
+          </div>
+
+
+          <div class="input-group">
+            <label id="number" class="d-block main-label">Number: </label>
+            <input class="form-control w-100" type="number" placeholder="Enter number" id="number" min="10" max="100"
+              required />
+          </div>
+
+          <div class="input-group">
+            <label for="layer" class="d-block main-label">Software Layer</label>
+            <select id="layer" class="form-control w-100" required>
+              <option value="">-- select --</option>
+              <option value="backend">Backend</option>
+              <option value="frontend">Frontend</option>
+            </select>
+          </div>
+
+
+          <div class="input-group">
+            <label class="d-block main-label mb-1">Favourite Programming Language:</label>
+
+            <label for="javascript">Javascript</label>
+            <input type="radio" id="javascript" name="coding-language" value="Javascript">
+
+            <label for="java">Java</label>
+            <input type="radio" id="java" name="coding-language" value="Java">
+
+            <label for="c++">C++</label>
+            <input type="radio" id="c++" name="coding-language" value="C++">
+          </div>
+
+          <div class="input-group">
+            <label class="d-block main-label mb-1">Favourite Food:</label>
+
+            <label for="pepper-soup">Pepper soup</label>
+            <input type="checkbox" id="pepper-soup" name="food" value="pepper-soup">
+
+            <label for="maqluba">Maqluba</label>
+            <input type="checkbox" id="maqluba" name="food">
+
+            <label for="pizza"> I have a pizza</label>
+            <input type="checkbox" id="pizza" name="pizza">
+          </div>
+
+          <div class="input-group">
+            <label for="comment" class="d-block main-label">Comment:</label>
+            <textarea name="comment" id="comment" rows="8" class="w-100"></textarea>
+          </div>
+
+          <input type="submit" name="" value="submit form" id="submit">
+        </form>
+      </section>
+    </main>
+  </body>
+
+</html>
