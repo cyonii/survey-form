@@ -28,6 +28,10 @@ header {
   }
 }
 
+main {
+  padding: 1rem;
+}
+
 button,
 input[type='button'],
 input[type='submit'] {
