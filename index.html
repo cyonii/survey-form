@@ -3,88 +3,65 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header>
-      <h1 id="title">Survey Form</h1>
-      <h6>Hello World, we are software developers!</h6>
-    </header>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <main>
-      <div class="survey-section">
-        <form class="survey-form">
-          <p class="survey-text">
-            This is a landing page, for a very big project, in an international
-            company.
-          </p>
+    <h1 id="title">Survey Form</h1>
 
-          <div class="input-group">
-            <label for="name" class="d-block main-label">Name:</label>
-            <input class="form-control w-100" type="text" id="name" placeholder="Enter name" required />
-          </div>
+    <h1>Hello World, we are software developers!</h1>
 
-
-          <div class="input-group">
-            <label for="email" class="d-block main-label">Email:</label>
-            <input class="form-control w-100" type="email" id="email" placeholder="Enter email" required />
-          </div>
+    <p id="description">
+      This is a landing page, for a very big project, in an international
+      company.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name: </label>
+      <input type="text" id="name" placeholder="Enter name" required />
+      <label id="email-label">Email: </email>
+        <input type="email" id="email" placeholder="Enter email" required />
+        <label id="number-label">Number: </label>
+        <input type="number" name="" value="" placeholder="Enter number" id="number" min="10" max="100" required />
+        <select class="" name="" id="dropdown">
+          <option value="a">a</option>
+          <option value="b">b</option>
+        </select>
 
 
-          <div class="input-group">
-            <label for="number" class="d-block main-label">Number: </label>
-            <input class="form-control w-100" type="number" placeholder="Enter number" id="number" min="10" max="100"
-              required />
-          </div>
-
-          <div class="input-group">
-            <label for="layer" class="d-block main-label">Software Layer</label>
-            <select id="layer" class="form-control w-100" required>
-              <option value="">-- select --</option>
-              <option value="backend">Backend</option>
-              <option value="frontend">Frontend</option>
-            </select>
-          </div>
+        <br>
+        <input type="radio" id="Java" name="favoriteCodingLanguage" value="Java">
+        <label for="Java">Java</label><br>
+        <input type="radio" id="Javascript" name="favoriteCodingLanguage" value="Javascript">
+        <label for="Javascript">Javascript</label><br>
+        <input type="radio" id="C++" name="favoriteCodingLanguage" value="C++">
+        <label for="C++">C++</label>
 
 
-          <div class="input-group">
-            <label class="d-block main-label mb-1">Favourite Programming Language:</label>
+        <br>
+        <input type="checkbox" id="food1" name="food1" value="fufu and eru">
+        <label for="food1"> I have a fufu and eru</label><br>
+        <input type="checkbox" id="food2" name="food2" value="Makloubah">
+        <label for="food2"> I have a Makloubah</label><br>
+        <input type="checkbox" id="pizza" name="pizza" value="pizza">
+        <label for="pizza"> I have a pizza</label><br>
 
-            <label for="javascript">Javascript</label>
-            <input type="radio" id="javascript" name="coding-language" value="Javascript">
+        <textarea name="comment" rows="8" cols="80"></textarea> <br>
+        <input type="submit" name="" value="submit form" id="submit">
 
-            <label for="java">Java</label>
-            <input type="radio" id="java" name="coding-language" value="Java">
 
-            <label for="c++">C++</label>
-            <input type="radio" id="c++" name="coding-language" value="C++">
-          </div>
-
-          <div class="input-group">
-            <label class="d-block main-label mb-1">Favourite Food:</label>
-
-            <label for="pepper-soup">Pepper soup</label>
-            <input type="checkbox" id="pepper-soup" name="food" value="pepper-soup">
-
-            <label for="maqluba">Maqluba</label>
-            <input type="checkbox" id="maqluba" name="food">
-
-            <label for="pizza">Pizza</label>
-            <input type="checkbox" id="pizza" name="pizza">
-          </div>
-
-          <div class="input-group">
-            <label for="comment" class="d-block main-label">Comment:</label>
-            <textarea name="comment" id="comment" rows="8" class="w-100"></textarea>
-          </div>
-
-          <input type="submit" value="Submit" id="submit">
-        </form>
-      </div>
-    </main>
+    </form>
+    <!--
+    Hello Camper!
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+    - The freeCodeCamp Team
+    -->
+    <script src="js/index.js"></script>
   </body>
 
 </html>
